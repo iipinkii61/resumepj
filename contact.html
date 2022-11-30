@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        .container {
+            padding: 24px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            width: 40vw;
+        }
+        input[type=text], input[type=email], select{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work experience</a> |
+        <a href="#">Contact me</a>
+    </nav>
+    <hr>
+    <h1>Contact Me</h1>
+    <div class="container">
+        <p>Enter your information</p>
+        <hr>
+        <br>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <label for="name">Your name</label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Your E-mail</label><br>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="gender">Gender</label><br>
+        <select name="gender" id="gender">
+            <option value="">Select..</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <label for="msg">Message</label><br>
+        <textarea name="msg" id="msg" style="width: 80%; height: 100px; resize: none;"></textarea>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+        </form>
+    </div>
+</body>
+</html>
